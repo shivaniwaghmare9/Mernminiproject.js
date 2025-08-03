@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 const Insert=()=>{
     return(
         <>
-          <Form>
+          <Form id="form">
       <Form.Group className="mb-3" >
         <Form.Label>Name</Form.Label>
         <Form.Control type="text"  name="name" onChange={handleInput}/>
