@@ -4,7 +4,7 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import BackendUrl from '../Utils/BackendURL';
 import axios from "axios";
-import {ToastContainer,toast} from "react-router-dom"
+import {ToastContainer,toast} from "react-toastify"
 
 const Insert=()=>{
     const [input,setInput]=useState({});

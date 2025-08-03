@@ -1,5 +1,5 @@
 
-const express=require("exprss");
+const express=require("express");
 const app=express();
 const dataRoute=require("./routes/dataRoute")
 const mongoose=require("mongoose");
