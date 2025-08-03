@@ -1,7 +1,26 @@
 
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
+import { useState } from 'react';
+import BackendUrl from '../Utils/BackendURL';
+import axios from "axios";
+import {ToastContainer,toast} from "react-router-dom"
+
 const Insert=()=>{
+    const [input,setInput]=useState({});
+    const handleInput=(e)=>{
+        let name=e.target.name;
+        let value=e.target.value;
+        setInput(Values=>({...Values,[name]:value}))
+        console.log(input)
+    }
+    const handleSubmit=async(e)=>{
+        e.preventDefault();
+        let api=`${BackendUrl}students/save`;
+        const response=await axios.post(api,input);
+        console.log(response.data);
+      toast.success("data successfully saved")
+    }
     return(
         <>
           <Form id="form">
@@ -28,6 +47,7 @@ const Insert=()=>{
         Submit
       </Button>
     </Form>
+    <ToastContainer/>
         </>
     )
 }
