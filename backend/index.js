@@ -8,7 +8,12 @@ mongoose.connect("mongodb://localhost:27017/1stcruddb").then(()=>{
     console.log("Database Successfully Connected")
 })
 
+//Bodyparser middleware
+app.use(bodyparser.urlencoded({extended:true}));
+app.use(bodyparser.json());
+
 app.use("students",dataRoute)
+
 app.listen(3000,()=>{
     console.log("Server is running on port 3000")
 })
