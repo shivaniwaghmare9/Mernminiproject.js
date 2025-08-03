@@ -2,6 +2,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import Layout from "./Layout";
 import Home from "./Pages/Home";
 import Insert from "./Pages/Insert";
+import Display from "./Pages/Display";
 
 
 const App=()=>{
@@ -13,6 +14,7 @@ const App=()=>{
           <Route index element={<Home/>}/>
           <Route path="home" element={<Home/>}/>
           <Route path="insert" element={<Insert/>}/>
+          <Routes path="display" element={<Display/>}/>
           </Route>
          </Routes>
      </BrowserRouter>

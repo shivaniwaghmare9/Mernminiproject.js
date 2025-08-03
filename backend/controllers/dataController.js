@@ -12,7 +12,12 @@ const dataSave=async(req,res)=>{
     console.log(req.body);
     res.send("data successfully saved")
 }
+const dataDisplay=async(req,res)=>{
+    const student=await dataModel.find();
+    res.send(student)
+}
 
 module.exports={
-    dataSave
+    dataSave,
+    dataDisplay
 }
