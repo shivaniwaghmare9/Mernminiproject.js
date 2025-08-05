@@ -41,10 +41,10 @@ const Update=()=>{
                 <td>{key.subject}</td>
                 <td>{key.fees}</td>
                 <td>
-                  <span onClick={()=>{editdata(key._id)}}>edit</span>
+                  <span onClick={()=>{editdata(key._id)}} className="span1">edit</span>
                 </td>
                 <td>
-                  <span onClick={()=>{deletedata(key._id)}}>delete</span>
+                  <span onClick={()=>{deletedata(key._id)}} className="span2">delete</span>
                   </td>
             </tr>
             </>

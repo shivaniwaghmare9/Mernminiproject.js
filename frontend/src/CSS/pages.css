@@ -8,6 +8,50 @@
     margin-top: 20px;
     text-align: center;
 }
+/*======================================================HOME PAGE=================================================================*/
+
+.container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      padding: 60px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .text-content {
+      flex: 1 1 500px;
+      padding: 20px;
+    }
+
+    .text-content h1 {
+      font-size: 42px;
+      margin-bottom: 20px;
+      color: #222;
+    }
+
+    .text-content p {
+      font-size: 18px;
+      line-height: 1.6;
+      margin-bottom: 20px;
+    }
+
+    .text-content button {
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #00bcd4;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background-color 0.3s;
+    }
+
+    .text-content button:hover {
+      background-color: #0097a7;
+    }
+
 /*======================================================INSERT PAGE=================================================================*/
 #form{
     margin-left: 32%;
@@ -25,3 +69,16 @@
    background-color: rgb(1, 25, 49);
    color: aliceblue;
 } */
+ /*==========================================================UPDATE PAGE======================================================================*/
+ .span1{
+    color: antiquewhite;
+    font-weight: bold;
+    background-color: brown;
+    padding: 0.3rem;
+ }
+  .span2{
+    color: aliceblue;
+    font-weight: bold;
+    background-color: rgb(2, 12, 62);
+    padding: 0.3rem;
+ }
