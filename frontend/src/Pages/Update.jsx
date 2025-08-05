@@ -26,6 +26,10 @@ const Update=()=>{
                 <td>{key.rollno}</td>
                 <td>{key.subject}</td>
                 <td>{key.fees}</td>
+                <td>
+                  <span onClick={()=>{editdata(key._id)}}>edit</span>
+                </td>
+                <td>delete</td>
             </tr>
             </>
         )
@@ -40,6 +44,8 @@ const Update=()=>{
           <th>Rollno</th>
           <th>Subject</th>
           <th>Fees</th>
+          <th>Edit</th>
+          <th>Delete</th>
         </tr>
       </thead>
       <tbody>
