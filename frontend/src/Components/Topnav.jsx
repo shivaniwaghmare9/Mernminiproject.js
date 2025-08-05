@@ -9,7 +9,7 @@ const Topnav=()=>{
         <Navbar bg="dark" data-bs-theme="dark">
         <Container>
             
-          <Navbar.Brand href="#home">My site</Navbar.Brand>
+          <Navbar.Brand href="#home" id='title'>Crud Opration</Navbar.Brand>
           <Nav className="me-auto">
             <Nav.Link as={Link} to="home">Home</Nav.Link>
             <Nav.Link as={Link} to="insert">Insert</Nav.Link>
