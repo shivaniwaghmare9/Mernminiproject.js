@@ -16,8 +16,13 @@ const dataDisplay=async(req,res)=>{
     const student=await dataModel.find();
     res.send(student)
 }
+const dataUpdate=async(req,res)=>{
+    const student=await dataModel.find();
+    res.send(student)
+}
 
 module.exports={
     dataSave,
-    dataDisplay
+    dataDisplay,
+    dataUpdate
 }

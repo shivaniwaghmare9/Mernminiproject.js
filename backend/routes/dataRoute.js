@@ -5,6 +5,6 @@ const dataController=require("../controllers/dataController")
 
 
 route.post("/save",dataController.dataSave);
-route.get("/save",dataController.dataDisplay);
+route.get("/display",dataController.dataDisplay);
 
 module.exports=route;
