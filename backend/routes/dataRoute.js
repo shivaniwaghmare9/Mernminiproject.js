@@ -8,5 +8,6 @@ route.post("/save",dataController.dataSave);
 route.get("/display",dataController.dataDisplay);
 route.get("/update",dataController.dataUpdate);
 route.delete("/delete/:id",dataController.dataDelete)
+route.get("/myedit",dataController.dataShow)
 
 module.exports=route;

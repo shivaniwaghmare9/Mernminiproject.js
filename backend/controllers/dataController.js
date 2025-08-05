@@ -25,7 +25,11 @@ const dataDelete=async(req,res)=>{
     const {id}=req.params;
     await  dataModel.findByIdAndDelete(id);
     res.send("data successfully deleted")
-
+}
+const dataShow=async(req,res)=>{
+    const {id}=req.query;
+    const student=await dataModel.findById(id);
+    res.send(student);
 }
 
 module.exports={

@@ -10,7 +10,7 @@ const Editdata=()=>{
     const {id}=useParams();
     const [mydata,setMydata]=useState({});
     const loadData=async()=>{
-        let api=`${BackendUrl}/students/?id=${id}`;
+        let api=`${BackendUrl}/students/myedit/?id=${id}`;
         const response=await axios.get(api,mydata);
         console.log(response.data);
         setMydata(response.data);
@@ -28,8 +28,8 @@ const Editdata=()=>{
     const handleSubmit=async(e)=>{
         e.preventDefault();
         let api=`${BackendUrl}/students/editdata`;
-        const response=await axios.post(api);
-        console.log(response)
+        const response=await axios.post(api,mydata);
+        console.log(response.data)
         toast.success("data successfully updated")
     }
     return(
