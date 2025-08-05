@@ -4,7 +4,7 @@ import BackendUrl from "../Utils/BackendURL";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
 
-const Display=()=>{
+const Update=()=>{
     const [mydata,setMydata]=useState([]);
     const loadData=async()=>{
         let api=`${BackendUrl}students/update`;
@@ -49,4 +49,4 @@ const Display=()=>{
         </>
     )
 }
-export default Display;
+export default Update;
