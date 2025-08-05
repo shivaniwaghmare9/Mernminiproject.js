@@ -20,6 +20,13 @@ const dataUpdate=async(req,res)=>{
     const student=await dataModel.find();
     res.send(student)
 }
+const dataDelete=async(req,res)=>{
+    //console.log(req.params)
+    const {id}=req.params;
+    const student=await  dataModel.findByIdAndDelete(id);
+    res.send("data successfully deleted")
+
+}
 
 module.exports={
     dataSave,

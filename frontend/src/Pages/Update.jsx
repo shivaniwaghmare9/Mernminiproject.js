@@ -18,9 +18,9 @@ const Update=()=>{
     },[])
 
     const deletedata=async(id)=>{
-      let api=`${BackendUrl}students/datadelete/${id}`;
+      let api=`${BackendUrl}students/delete/${id}`;
       const response=await axios.delete(api);
-      console.log(response)
+      console.log(response.data)
       toast.error("data successfully deleted")
     }
     let sno=0;
