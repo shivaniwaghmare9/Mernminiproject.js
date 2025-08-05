@@ -18,6 +18,13 @@ const Editdata=()=>{
     useEffect(()=>{
         loadData();
     },[])
+
+    const handleInput=async(e)=>{
+        let api=`${BackendUrl}/students/editdata`;
+        const response=await axios.post(api);
+        console.log(response)
+        toast.success("data successfully updated")
+    }
     return(
         <>
         <h3>Edit data {id}</h3>
