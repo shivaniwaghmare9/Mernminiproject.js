@@ -17,6 +17,7 @@ const App=()=>{
           <Route path="insert" element={<Insert/>}/>
           <Route path="display" element={<Display/>}/>
           <Route path="update" element={<Update/>}/>
+          <Route path="/edit/:id" element={}
           </Route>
          </Routes>
      </BrowserRouter>
