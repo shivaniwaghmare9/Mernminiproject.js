@@ -3,6 +3,7 @@ import { useState,useEffect } from "react";
 import BackendUrl from "../Utils/BackendURL";
 import axios from "axios";
 import Table from 'react-bootstrap/Table';
+import {ToastContainer, toast } from "react-toastify";
 
 const Update=()=>{
     const [mydata,setMydata]=useState([]);
@@ -15,6 +16,13 @@ const Update=()=>{
     useEffect(()=>{
         loadData();
     },[])
+
+    const deletedata=async(id)=>{
+      let api=`${BackendUrl}students/datadelete/${id}`;
+      const response=await axios.delete(api);
+      console.log(response)
+      toast.error("data successfully deleted")
+    }
     let sno=0;
     const ans=mydata.map((key)=>{
         sno++;
@@ -29,7 +37,7 @@ const Update=()=>{
                 <td>
                   <span onClick={()=>{editdata(key._id)}}>edit</span>
                 </td>
-                <td>delete</td>
+                <td onClick={()=>{deletedata(key._id)}}>delete</td>
             </tr>
             </>
         )
@@ -52,6 +60,7 @@ const Update=()=>{
         {ans}
       </tbody>
       </Table>
+      <ToastContainer/>
         </>
     )
 }
