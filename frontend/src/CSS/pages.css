@@ -39,7 +39,7 @@
     .text button {
       padding: 12px 24px;
       font-size: 16px;
-      background-color: #0a387e;
+      background-color: #06367e;
       color: white;
       border: none;
       border-radius: 5px;
@@ -47,9 +47,9 @@
       transition: background-color 0.3s;
     }
 
-    .text button:hover {
-      background-color: #0097a7;
-    }
+    .text button:hover{
+    background-color: #214b8a;
+}
     .image {
       flex: 1 1 400px;
       padding: 20px;
@@ -85,6 +85,12 @@
     padding: 2rem;
     border-radius: 10px;
     box-shadow: 4px 7px 10px rgb(236, 236, 239),-4px -7px 10px rgb(231, 229, 229);
+}
+#form button{
+    background-color: #043072;
+}
+#form button:hover{
+    background-color: #214b8a;
 }
 /*======================================================DISPLAY PAGE=================================================================*/
 #tbl{
