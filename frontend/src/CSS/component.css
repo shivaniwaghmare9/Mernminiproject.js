@@ -25,22 +25,22 @@
 }
 
 /*===============================================================FOOTER============================================================================*/
-/* #footer{
-    height:300px;
-    background-color: dodgerblue;
-} */
- .content {
+
+  .content {
       flex: 1;
       padding: 20px;
     }
 
     footer {
-      background-color: #f8f8f8;
+      height:300px;
+    background-color: dodgerblue;
       padding: 20px;
       text-align: center;
       font-size: 14px;
       color: #444;
       border-top: 1px solid #ddd;
+      display: flex;
+      
     }
 
     .footer-links {
