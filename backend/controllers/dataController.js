@@ -31,11 +31,22 @@ const dataShow=async(req,res)=>{
     const student=await dataModel.findById(id);
     res.send(student);
 }
+const editSave=async(req,res)=>{
+    const {_id,name,rollno,subject,fees}=req.body;
+    await dataModel.findByIdAndUpdate(_id, {
+        name:name,
+        rollno:rollno,
+        subject:subject,
+        fees:fees
+    })
+    res.send("data successfully updated")
+}
 
 module.exports={
     dataSave,
     dataDisplay,
     dataUpdate,
     dataDelete,
-    dataShow
+    dataShow,
+    editSave
 }
