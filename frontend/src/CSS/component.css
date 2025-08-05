@@ -31,16 +31,23 @@
       padding: 20px;
     }
 
-    footer {
+    #footer {
       height:300px;
-    background-color: dodgerblue;
-      padding: 20px;
+      background-color: dodgerblue;
+      /* padding: 20px;
       text-align: center;
       font-size: 14px;
       color: #444;
       border-top: 1px solid #ddd;
-      display: flex;
+      display: flex; */
       
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        /* flex-direction: column;
+        flex-wrap: wrap;
+        margin: auto; */
     }
 
     .footer-links {
