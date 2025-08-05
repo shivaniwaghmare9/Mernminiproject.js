@@ -19,7 +19,14 @@ const Editdata=()=>{
         loadData();
     },[])
 
-    const handleInput=async(e)=>{
+    const handleInput=async()=>{
+        let name=e.target.name;
+        let value=e.target.value;
+        setMydata(Values=>({...Values,[name]:value}))
+        console.log(mydata)
+    }
+    const handleSubmit=async(e)=>{
+        e.preventDefault();
         let api=`${BackendUrl}/students/editdata`;
         const response=await axios.post(api);
         console.log(response)
