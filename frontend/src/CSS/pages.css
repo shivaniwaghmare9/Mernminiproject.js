@@ -39,7 +39,7 @@
     .text button {
       padding: 12px 24px;
       font-size: 16px;
-      background-color: #06367e;
+      background-color: #11418a;
       color: white;
       border: none;
       border-radius: 5px;
@@ -48,7 +48,7 @@
     }
 
     .text button:hover{
-    background-color: #214b8a;
+    background-color: #3a67ab;
 }
     .image {
       flex: 1 1 400px;
