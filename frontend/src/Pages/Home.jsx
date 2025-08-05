@@ -1,4 +1,5 @@
 
+import img1 from "../images/img1.jpeg"
 const Home=()=>{
     return(
         <>
@@ -15,9 +16,9 @@ const Home=()=>{
     </div>
 
     
-    {/* <div class="image-content">
-      <img src="https://via.placeholder.com/500x300" alt="Home page illustration"/>
-    </div> */}
+    <div class="image-content">
+      <img src={img1} alt="Home page illustration"/>
+    </div>
   </div>
         </>
     )

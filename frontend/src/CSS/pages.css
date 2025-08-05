@@ -15,7 +15,6 @@
       flex-wrap: wrap;
       align-items: center;
       justify-content: center;
-      padding: 60px 20px;
       max-width: 1200px;
       margin: auto;
     }
@@ -51,6 +50,32 @@
     .text-content button:hover {
       background-color: #0097a7;
     }
+    .image-content {
+      flex: 1 1 400px;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .image-content img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    @media (max-width: 768px) {
+      .container {
+        flex-direction: column;
+        text-align: center;
+      }
+
+      .text-content h1 {
+        font-size: 32px;
+      }
+
+      .text-content button {
+        width: 100%;
+      }
+    }
 
 /*======================================================INSERT PAGE=================================================================*/
 #form{
@@ -65,10 +90,7 @@
 #tbl{
     margin-top: 20px;
 }
-/* #tbl tr th{
-   background-color: rgb(1, 25, 49);
-   color: aliceblue;
-} */
+
  /*==========================================================UPDATE PAGE======================================================================*/
  .span1{
     color: antiquewhite;
