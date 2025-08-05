@@ -23,7 +23,7 @@ const dataUpdate=async(req,res)=>{
 const dataDelete=async(req,res)=>{
     //console.log(req.params)
     const {id}=req.params;
-    const student=await  dataModel.findByIdAndDelete(id);
+    await  dataModel.findByIdAndDelete(id);
     res.send("data successfully deleted")
 
 }

@@ -37,7 +37,9 @@ const Update=()=>{
                 <td>
                   <span onClick={()=>{editdata(key._id)}}>edit</span>
                 </td>
-                <td onClick={()=>{deletedata(key._id)}}>delete</td>
+                <td>
+                  <span onClick={()=>{deletedata(key._id)}}>delete</span>
+                  </td>
             </tr>
             </>
         )
