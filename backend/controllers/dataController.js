@@ -36,5 +36,6 @@ module.exports={
     dataSave,
     dataDisplay,
     dataUpdate,
-    dataDelete
+    dataDelete,
+    dataShow
 }

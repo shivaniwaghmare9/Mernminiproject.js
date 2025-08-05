@@ -10,7 +10,7 @@ const Editdata=()=>{
     const {id}=useParams();
     const [mydata,setMydata]=useState({});
     const loadData=async()=>{
-        let api=`${BackendUrl}/students/myedit/?id=${id}`;
+        let api=`${BackendUrl}students/myedit/?id=${id}`;
         const response=await axios.get(api,mydata);
         console.log(response.data);
         setMydata(response.data);
@@ -19,7 +19,7 @@ const Editdata=()=>{
         loadData();
     },[])
 
-    const handleInput=async()=>{
+    const handleInput=async(e)=>{
         let name=e.target.name;
         let value=e.target.value;
         setMydata(Values=>({...Values,[name]:value}))
@@ -27,14 +27,14 @@ const Editdata=()=>{
     }
     const handleSubmit=async(e)=>{
         e.preventDefault();
-        let api=`${BackendUrl}/students/editdata`;
+        let api=`${BackendUrl}students/editsave`;
         const response=await axios.post(api,mydata);
         console.log(response.data)
         toast.success("data successfully updated")
     }
     return(
         <>
-        <h3>Edit data {id}</h3>
+        <h3>Edit data </h3>
         <Form id="form">
       <Form.Group className="mb-3" >
         <Form.Label>Name</Form.Label>
