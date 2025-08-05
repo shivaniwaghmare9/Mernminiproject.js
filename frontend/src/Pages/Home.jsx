@@ -6,7 +6,7 @@ const Home=()=>{
     <h3 className='h33'>Our page!!</h3>
           <div class="container">
     
-    <div class="text-content">
+    <div class="text">
       <h1>Welcome to Our Website</h1>
       <p>
         We provide creative digital solutions to grow your business online.
@@ -16,7 +16,7 @@ const Home=()=>{
     </div>
 
     
-    <div class="image-content">
+    <div class="image">
       <img src={img1} alt="Home page illustration"/>
     </div>
   </div>

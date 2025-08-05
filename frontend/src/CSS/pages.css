@@ -19,24 +19,24 @@
       margin: auto;
     }
 
-    .text-content {
+    .text {
       flex: 1 1 500px;
       padding: 20px;
     }
 
-    .text-content h1 {
+    .text h1 {
       font-size: 42px;
       margin-bottom: 20px;
       color: #222;
     }
 
-    .text-content p {
+    .text p {
       font-size: 18px;
       line-height: 1.6;
       margin-bottom: 20px;
     }
 
-    .text-content button {
+    .text button {
       padding: 12px 24px;
       font-size: 16px;
       background-color: #00bcd4;
@@ -47,16 +47,16 @@
       transition: background-color 0.3s;
     }
 
-    .text-content button:hover {
+    .text button:hover {
       background-color: #0097a7;
     }
-    .image-content {
+    .image {
       flex: 1 1 400px;
       padding: 20px;
       text-align: center;
     }
 
-    .image-content img {
+    .image img {
       max-width: 100%;
       height: auto;
       border-radius: 10px;
