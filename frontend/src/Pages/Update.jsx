@@ -22,6 +22,7 @@ const Update=()=>{
       const response=await axios.delete(api);
       console.log(response.data)
       toast.error("data successfully deleted")
+      loadData();
     }
     let sno=0;
     const ans=mydata.map((key)=>{

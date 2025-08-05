@@ -31,5 +31,6 @@ const dataDelete=async(req,res)=>{
 module.exports={
     dataSave,
     dataDisplay,
-    dataUpdate
+    dataUpdate,
+    dataDelete
 }
