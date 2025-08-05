@@ -2,7 +2,7 @@
 const Home=()=>{
     return(
         <>
-          <h3>Our page!!</h3>
+          <h3 className='h33'>Our page!!</h3>
         </>
     )
 }
