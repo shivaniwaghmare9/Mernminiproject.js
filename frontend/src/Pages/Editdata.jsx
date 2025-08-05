@@ -34,7 +34,7 @@ const Editdata=()=>{
     }
     return(
         <>
-        <h3>Edit data </h3>
+        <h3 className='h33'>Edit data </h3>
         <Form id="form">
       <Form.Group className="mb-3" >
         <Form.Label>Name</Form.Label>

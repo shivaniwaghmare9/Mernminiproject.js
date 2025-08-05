@@ -34,7 +34,7 @@ const Display=()=>{
         <>
 
         <h3 className='h33'>Displayed data!!</h3>
-         <Table striped bordered hover>
+         <Table striped bordered hover id="tbl">
       <thead>
         <tr>
           <th>Sno</th>
