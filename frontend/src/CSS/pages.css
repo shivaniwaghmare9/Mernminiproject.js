@@ -39,7 +39,7 @@
     .text button {
       padding: 12px 24px;
       font-size: 16px;
-      background-color: #00bcd4;
+      background-color: #032963;
       color: white;
       border: none;
       border-radius: 5px;
@@ -57,7 +57,7 @@
     }
 
     .image img {
-      max-width: 100%;
+      width: 300px;
       height: auto;
       border-radius: 10px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
