@@ -52,6 +52,7 @@ const Update=()=>{
     })
     return(
         <>
+          <h3 className='h33'>Data update page!!</h3>
          <Table striped bordered hover>
       <thead>
         <tr>
