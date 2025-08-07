@@ -39,7 +39,18 @@ const Search=()=>{
         </tr>
       </thead>
       <tbody>
-        {ans}
+        {mydata>=1 && mydata.map((key)=>{
+          return(
+            <>
+             <tr>
+              <td>{key.name}</td>
+              <td>{key.rollno}</td>
+              <td>{key.subject}</td>
+              <td>{key.fees}</td>
+             </tr>
+            </>
+          )
+        })}
       </tbody>
       </Table>
         </>
