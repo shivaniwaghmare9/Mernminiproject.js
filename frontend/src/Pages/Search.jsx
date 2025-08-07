@@ -39,7 +39,7 @@ const Search=()=>{
         </tr>
       </thead>
       <tbody>
-        {mydata>=1 && mydata.map((key)=>{
+        {mydata.length>=1 && mydata.map((key)=>{
           return(
             <>
              <tr>
