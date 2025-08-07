@@ -16,6 +16,8 @@ const Search=()=>{
       console.log(response.data);
       setMydata(response.data)
   }
+
+  let sno=0;
     return(
         <>
         <h3 className="h33">Search Data!!!</h3>
@@ -38,11 +40,15 @@ const Search=()=>{
           <th>Fees</th>
         </tr>
       </thead>
+      
       <tbody>
+        
         {mydata.length>=1 && mydata.map((key)=>{
+          sno++;
           return(
             <>
              <tr>
+              <td>{sno}</td>
               <td>{key.name}</td>
               <td>{key.rollno}</td>
               <td>{key.subject}</td>
