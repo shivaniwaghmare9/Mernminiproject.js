@@ -41,6 +41,12 @@ const editSave=async(req,res)=>{
     })
     res.send("data successfully updated")
 }
+const searchData=async(req,res)=>{
+    const {rollno}=req.body;
+    const student=await dataModel.find({rollno:rollno});
+    console.log(student);
+    res.send(student)
+}
 
 module.exports={
     dataSave,
@@ -48,5 +54,6 @@ module.exports={
     dataUpdate,
     dataDelete,
     dataShow,
-    editSave
+    editSave,
+    searchData
 }
