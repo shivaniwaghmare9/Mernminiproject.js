@@ -2,11 +2,18 @@
 import Button from 'react-bootstrap/Button';
 import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
+import BackendUrl from '../Utils/BackendURL';
+import axios from "axios"
 const Search=()=>{
   const[rno,setRno]=useState("");
+  const[mydata,setMydata]=useState([]);
 
-  const handleSubmit=()=>{
-    
+
+  const handleSubmit=async()=>{
+      let api=`${BackendUrl}students/search`;
+      const response=await axios.post(api,{rollno:rno});
+      console.log(response.data);
+      setMydata(response.data)
   }
     return(
         <>
