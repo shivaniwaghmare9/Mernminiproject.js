@@ -4,6 +4,7 @@ import Form from 'react-bootstrap/Form';
 import { useState } from 'react';
 import BackendUrl from '../Utils/BackendURL';
 import axios from "axios"
+import Table from 'react-bootstrap/Table';
 const Search=()=>{
   const[rno,setRno]=useState("");
   const[mydata,setMydata]=useState([]);
@@ -27,6 +28,20 @@ const Search=()=>{
         Search
       </Button>
     </Form>
+    <Table striped bordered hover id="tbl">
+      <thead>
+        <tr>
+          <th>Sno</th>
+          <th>Name</th>
+          <th>Rollno</th>
+          <th>Subject</th>
+          <th>Fees</th>
+        </tr>
+      </thead>
+      <tbody>
+        {ans}
+      </tbody>
+      </Table>
         </>
     )
 }
