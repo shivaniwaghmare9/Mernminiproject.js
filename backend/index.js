@@ -5,7 +5,7 @@ const dataRoute=require("./routes/dataRoute")
 const mongoose=require("mongoose");
 const bodyparser=require("body-parser");
 const cors=require("cors")
-mongoose.connect("mongodb://localhost:27017/1stcruddb").then(()=>{
+mongoose.connect("mongodb+srv://shivaniw69:QrGsyB2168Rrx9Na@cluster0.fyrj258.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0").then(()=>{
     console.log("Database Successfully Connected")
 })
 
