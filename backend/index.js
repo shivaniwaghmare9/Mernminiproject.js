@@ -12,7 +12,9 @@ mongoose.connect("mongodb+srv://shivaniw69:QrGsyB2168Rrx9Na@cluster0.fyrj258.mon
 //Bodyparser middleware
 app.use(bodyparser.urlencoded({extended:true}));
 app.use(bodyparser.json());
-app.use(cors());
+app.use(cors({
+  origin: "https://mernminiproject.vercel.app/"
+}));
 app.use("/students",dataRoute)
 
 app.listen(3000,()=>{
