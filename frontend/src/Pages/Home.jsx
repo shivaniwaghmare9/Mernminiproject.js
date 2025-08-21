@@ -1,6 +1,14 @@
 
 import img1 from "../images/img1.jpeg"
+import BackendUrl from '../Utils/BackendURL';
 const Home=()=>{
+  const handleSubmit=async()=>{
+        
+        let api=`${BackendUrl}students/home`;
+        const response=await axios.get(api);
+        console.log(response);
+      
+    }
     return(
         <>
     <h3 className='h33'>Our page!!</h3>
@@ -20,7 +28,10 @@ const Home=()=>{
       <img src={img1} alt="Home page illustration"/>
     </div>
   </div>
-        </>
+ <button onClick={handleSubmit}>Get Started</button>
+
+  
+    </>
     )
 }
 export default Home
