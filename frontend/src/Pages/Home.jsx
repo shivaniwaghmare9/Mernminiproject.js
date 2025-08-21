@@ -1,10 +1,18 @@
 
 import img1 from "../images/img1.jpeg"
 import BackendUrl from '../Utils/BackendURL';
+import axios from "axios";
 const Home=()=>{
   const handleSubmit=async()=>{
         
-        let api=`${BackendUrl}students/home`;
+        let api=`${BackendUrl}/home`;
+        const response=await axios.get(api);
+        console.log(response);
+      
+    }
+    const handleSubmit2=async()=>{
+        
+        let api=`${BackendUrl}/about`;
         const response=await axios.get(api);
         console.log(response);
       
@@ -14,7 +22,7 @@ const Home=()=>{
     <h3 className='h33'>Our page!!</h3>
           <div class="container">
     
-    <div class="text">
+    <div className="text">
       <h1>Welcome to Our Website</h1>
       <p>
         We provide creative digital solutions to grow your business online.
@@ -29,6 +37,8 @@ const Home=()=>{
     </div>
   </div>
  <button onClick={handleSubmit}>Get Started</button>
+  <button onClick={handleSubmit2}>Get Started</button>
+
 
   
     </>
